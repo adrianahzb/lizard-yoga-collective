@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
         <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-primary-foreground leading-[0.9] mb-6">
           lizard<br />
-          <span className="font-editorial font-light">yoga</span>
+          yoga
         </h1>
         <p className="font-editorial text-xl sm:text-2xl md:text-3xl font-light text-primary-foreground/90 max-w-xl">
           your oasis in the middle of the city
