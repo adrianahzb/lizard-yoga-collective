@@ -1,0 +1,50 @@
+import heroImage from "@/assets/hero-studio.jpg";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-screen flex items-end">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Lizard Yoga studio with warm lighting and purple ambient glow"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 pb-20 pt-32">
+        <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground/70 mb-4">
+          Austin, TX — Yoga · Sound Bath · Sauna · Cold Plunge · Float
+        </p>
+        <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-primary-foreground leading-[0.9] mb-6">
+          lizard<br />
+          <span className="font-editorial font-light">yoga</span>
+        </h1>
+        <p className="font-editorial text-xl sm:text-2xl md:text-3xl font-light text-primary-foreground/90 max-w-xl">
+          your oasis in the middle of the city
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <a
+            href="#offerings"
+            className="font-body text-sm font-semibold uppercase tracking-widest bg-accent text-accent-foreground px-8 py-4 hover:brightness-110 transition-all text-center"
+          >
+            Explore Offerings
+          </a>
+          <a
+            href="#pricing"
+            className="font-body text-sm font-semibold uppercase tracking-widest border border-primary-foreground/40 text-primary-foreground px-8 py-4 hover:bg-primary-foreground/10 transition-all text-center"
+          >
+            View Schedule
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
