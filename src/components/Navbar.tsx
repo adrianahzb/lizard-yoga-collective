@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/logo_lizard.png";
+import wordmark from "@/assets/logo_wordmark.png";
 
 const navItems = [
   { label: "Schedule", href: "#schedule" },
@@ -16,11 +17,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
-        <a href="#" className="flex items-center gap-2">
-          <img src={logoImg} alt="Lizard Yoga" className="h-10 w-auto" />
-          <span className="font-display text-2xl font-bold tracking-wider text-primary">
-            lizard yoga
-          </span>
+        <a href="#" className="flex items-center gap-2" aria-label="Lizard Yoga home">
+          <img src={logoImg} alt="" className="h-10 w-auto" />
+          <img src={wordmark} alt="Lizard Yoga" className="h-5 w-auto" />
         </a>
 
         {/* Desktop nav */}

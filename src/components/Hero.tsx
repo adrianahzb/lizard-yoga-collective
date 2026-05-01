@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-studio.jpg";
+import wordmarkWhite from "@/assets/logo_wordmark_white.png";
 
 const Hero = () => {
   return (
@@ -20,9 +21,14 @@ const Hero = () => {
         <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground/70 mb-4">
           Austin, TX — Yoga · Sound Bath · Sauna · Cold Plunge · Float
         </p>
-        <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-primary-foreground leading-[0.9] mb-6">
-          lizard<br />
-          yoga
+        <h1 className="mb-6">
+          <span className="sr-only">Lizard Yoga</span>
+          <img
+            src={wordmarkWhite}
+            alt=""
+            aria-hidden="true"
+            className="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto"
+          />
         </h1>
         <p className="font-editorial text-xl sm:text-2xl md:text-3xl font-light text-primary-foreground/90 max-w-xl">
           your oasis in the middle of the city
