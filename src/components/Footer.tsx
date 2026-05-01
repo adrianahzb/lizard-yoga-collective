@@ -1,6 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
-import logoWhite from "@/assets/logo_lizard_white.png";
-import wordmarkWhite from "@/assets/logo_wordmark_white.png";
+import fullLogoWhite from "@/assets/logo_full_white_short.png";
 
 const Footer = () => {
   return (
@@ -9,9 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-2">
-              <img src={logoWhite} alt="" className="h-12 w-auto" />
-              <img src={wordmarkWhite} alt="Lizard Yoga" className="h-7 w-auto" />
+            <div className="mb-2">
+              <img src={fullLogoWhite} alt="Lizard Yoga" className="h-14 w-auto" />
             </div>
             <p className="font-editorial text-lg text-primary-foreground/70">
               your oasis in the middle of the city
