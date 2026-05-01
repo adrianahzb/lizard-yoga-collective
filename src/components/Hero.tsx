@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-studio.jpg";
-import wordmarkWhite from "@/assets/logo_wordmark_white.png";
+import wordmarkWhite from "@/assets/logo_full_white_short.png";
 
 const Hero = () => {
   return (
