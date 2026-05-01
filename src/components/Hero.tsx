@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-studio.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 import wordmarkWhite from "@/assets/logo_full_white_short.png";
 
 const Hero = () => {
@@ -6,11 +7,13 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-end">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Lizard Yoga studio with warm lighting and purple ambient glow"
-          width={1920}
-          height={1080}
+        <video
+          src={heroVideo}
+          poster={heroImage}
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
