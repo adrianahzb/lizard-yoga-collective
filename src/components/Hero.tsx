@@ -18,8 +18,8 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 pb-20 pt-32">
-        <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground/70 mb-4">
-          Austin, TX — Yoga · Sound Bath · Sauna · Cold Plunge · Float
+        <p className="font-body font-semibold uppercase tracking-[0.3em] text-primary-foreground/70 mb-4 text-base">
+          YOGA STUDIO & HOLISTIC SPA
         </p>
         <h1 className="mb-6">
           <span className="sr-only">Lizard Yoga</span>
