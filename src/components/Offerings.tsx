@@ -64,7 +64,7 @@ const Offerings = () => {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-transparent" />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                 <p className="font-body text-[10px] font-semibold uppercase tracking-[0.3em] text-accent mb-2">
