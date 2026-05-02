@@ -1,14 +1,18 @@
-import heroImage from "@/assets/hero-studio.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
+import heroPoster from "@/assets/hero-video-poster.jpg";
 import wordmarkWhite from "@/assets/logo_full_white_short.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-end">
-      {/* Background image */}
-      <div className="absolute inset-0">
+    <section className="relative min-h-screen flex items-end bg-primary">
+      {/* Background video */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroPoster})` }}
+      >
         <video
           src={heroVideo}
+          poster={heroPoster}
           autoPlay
           muted
           loop
