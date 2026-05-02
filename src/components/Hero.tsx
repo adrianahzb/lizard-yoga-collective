@@ -9,11 +9,11 @@ const Hero = () => {
       <div className="absolute inset-0">
         <video
           src={heroVideo}
-          poster={heroImage}
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent" />
