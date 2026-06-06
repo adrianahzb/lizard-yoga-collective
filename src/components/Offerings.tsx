@@ -3,6 +3,7 @@ import soundbathImg from "@/assets/offerings-soundbath.jpg";
 import saunaImg from "@/assets/offerings-sauna.jpg";
 import coldplungeImg from "@/assets/offerings-coldplunge.jpg";
 import floatImg from "@/assets/offerings-float.jpg";
+import massageImg from "@/assets/offerings-massage.jpg";
 
 const offerings = [
   {
