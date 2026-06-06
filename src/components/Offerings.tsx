@@ -3,6 +3,7 @@ import soundbathImg from "@/assets/offerings-soundbath.jpg";
 import saunaImg from "@/assets/offerings-sauna.jpg";
 import coldplungeImg from "@/assets/offerings-coldplunge.jpg";
 import floatImg from "@/assets/offerings-float.jpg";
+import massageImg from "@/assets/offerings-massage.jpg";
 
 const offerings = [
   {
@@ -35,6 +36,12 @@ const offerings = [
     description: "1,000 pounds of Epsom salt, zero gravity, total silence. The deepest rest you've never had.",
     image: floatImg,
   },
+  {
+    title: "Massage",
+    subtitle: "therapeutic touch",
+    description: "Deep tissue, Swedish, and myofascial release — tailored bodywork to melt tension and restore mobility.",
+    image: massageImg,
+  },
 ];
 
 const Offerings = () => {
@@ -52,10 +59,10 @@ const Offerings = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {offerings.map((offering, i) => (
+          {offerings.map((offering) => (
             <div
               key={offering.title}
-              className={`group relative overflow-hidden ${i === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
+              className="group relative overflow-hidden"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
 
