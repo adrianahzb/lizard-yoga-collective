@@ -62,7 +62,7 @@ const Offerings = () => {
           {offerings.map((offering, i) => (
             <div
               key={offering.title}
-              className={`group relative overflow-hidden ${i === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
+              className="group relative overflow-hidden"
             >
               <div className="relative aspect-[3/4] overflow-hidden">
 
