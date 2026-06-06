@@ -1,7 +1,7 @@
 import yogaImg from "@/assets/offerings-yoga.jpg";
 import soundbathImg from "@/assets/offerings-soundbath.jpg";
-import saunaImg from "@/assets/offerings-sauna.jpg";
-import coldplungeImg from "@/assets/offerings-coldplunge.jpg";
+import breathworkImg from "@/assets/offerings-breathwork.jpg";
+import contrastImg from "@/assets/offerings-contrast.jpg";
 import floatImg from "@/assets/offerings-float.jpg";
 import massageImg from "@/assets/offerings-massage.jpg";
 
@@ -19,16 +19,16 @@ const offerings = [
     image: soundbathImg,
   },
   {
-    title: "Infrared Sauna",
-    subtitle: "deep heat, deep rest",
-    description: "Private infrared sessions that detoxify, reduce inflammation, and leave you feeling completely renewed.",
-    image: saunaImg,
+    title: "Breathwork",
+    subtitle: "the original medicine",
+    description: "Guided conscious breathing to calm the mind, release stored tension, and access deeper states of presence.",
+    image: breathworkImg,
   },
   {
-    title: "Cold Plunge",
-    subtitle: "reset & regulate",
-    description: "Science-backed cold exposure to sharpen focus, boost recovery, and build resilience — one breath at a time.",
-    image: coldplungeImg,
+    title: "Contrast Therapy",
+    subtitle: "hot meets cold",
+    description: "Alternating infrared sauna and cold plunge to boost circulation, reduce inflammation, and build resilience — the ultimate nervous system reset.",
+    image: contrastImg,
   },
   {
     title: "Float",
@@ -43,6 +43,7 @@ const offerings = [
     image: massageImg,
   },
 ];
+
 
 const Offerings = () => {
   return (
