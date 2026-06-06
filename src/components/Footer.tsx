@@ -14,6 +14,14 @@ const Footer = () => {
             <p className="font-editorial text-lg text-primary-foreground/70">
               your oasis in the middle of the city
             </p>
+            <div className="flex gap-4 mt-4">
+              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="mailto:hello@lizardyoga.com" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Email">
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Contact Info */}
@@ -63,14 +71,6 @@ const Footer = () => {
               ))}
             </dl>
 
-            <div className="flex gap-4 mt-6">
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
-              </a>
-              <a href="mailto:hello@lizardyoga.com" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Email">
-                <Mail size={20} />
-              </a>
-            </div>
           </div>
         </div>
 
