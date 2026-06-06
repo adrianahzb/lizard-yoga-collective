@@ -36,6 +36,12 @@ const offerings = [
     description: "1,000 pounds of Epsom salt, zero gravity, total silence. The deepest rest you've never had.",
     image: floatImg,
   },
+  {
+    title: "Massage",
+    subtitle: "therapeutic touch",
+    description: "Deep tissue, Swedish, and myofascial release — tailored bodywork to melt tension and restore mobility.",
+    image: massageImg,
+  },
 ];
 
 const Offerings = () => {
