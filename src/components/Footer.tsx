@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 import fullLogoWhite from "@/assets/logo_full_white_short.png";
 
 const Footer = () => {
@@ -16,30 +16,58 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Location */}
+          {/* Contact Info */}
           <div>
             <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-accent mb-4">
-              Visit Us
+              Contact Info
             </p>
-            <div className="flex items-start gap-2 text-primary-foreground/80">
-              <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-              <p className="font-body text-sm leading-relaxed">
-                Austin, TX<br />
-                Open 7 days a week
-              </p>
+            <div className="space-y-3 text-primary-foreground/80 font-body text-sm">
+              <div className="flex items-start gap-2">
+                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                <p className="leading-relaxed">
+                  Lizard Yoga<br />
+                  2919 Menchaca Rd #104<br />
+                  Austin, TX 78704
+                </p>
+              </div>
+              <div className="flex items-center gap-2 text-accent">
+                <Phone size={16} className="flex-shrink-0" />
+                <a href="tel:5124310616" className="hover:underline">512.431.0616</a>
+              </div>
+              <div className="flex items-center gap-2 text-accent">
+                <Mail size={16} className="flex-shrink-0" />
+                <a href="mailto:hello@lizardyoga.com" className="hover:underline">hello@lizardyoga.com</a>
+              </div>
             </div>
           </div>
 
-          {/* Connect */}
+          {/* Hours */}
           <div>
             <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-accent mb-4">
-              Connect
+              Hours
             </p>
-            <div className="flex gap-4">
+            <dl className="font-body text-sm text-primary-foreground/80 space-y-1.5">
+              {[
+                ["Monday", "7:30 AM – 9 PM"],
+                ["Tuesday", "7:30 AM – 9 PM"],
+                ["Wednesday", "7:30 AM – 9 PM"],
+                ["Thursday", "7:30 AM – 9 PM"],
+                ["Friday", "7:30 AM – 9 PM"],
+                ["Saturday", "9 AM – 9 PM"],
+                ["Sunday", "9 AM – 9 PM"],
+              ].map(([day, hours]) => (
+                <div key={day} className="flex justify-between gap-4">
+                  <dt>{day}</dt>
+                  <dd className="text-primary-foreground/70">{hours}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className="flex gap-4 mt-6">
               <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Email">
+              <a href="mailto:hello@lizardyoga.com" className="text-primary-foreground/70 hover:text-accent transition-colors" aria-label="Email">
                 <Mail size={20} />
               </a>
             </div>
