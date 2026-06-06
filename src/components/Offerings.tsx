@@ -57,7 +57,8 @@ const Offerings = () => {
               key={offering.title}
               className={`group relative overflow-hidden ${i === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
             >
-              <div className={`relative ${i === 0 ? "aspect-[2/1]" : "aspect-[3/4]"} overflow-hidden`}>
+              <div className="relative aspect-[3/4] overflow-hidden">
+
                 <img
                   src={offering.image}
                   alt={offering.title}
